@@ -118,6 +118,10 @@ class auth_plugin_cognito extends \auth_plugin_base {
         return true;
     }
 
+    public function user_login($username, $password): bool {
+        return false;
+    } 
+
     /**
      * Encrypted Cookie manager for wantsurl
      * @return void
