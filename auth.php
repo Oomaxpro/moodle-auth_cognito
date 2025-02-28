@@ -118,6 +118,12 @@ class auth_plugin_cognito extends \auth_plugin_base {
         return true;
     }
 
+    /**
+     * Summary of user_login
+     * @param mixed $username
+     * @param mixed $password
+     * @return bool
+     */
     public function user_login($username, $password): bool {
         return false;
     } 

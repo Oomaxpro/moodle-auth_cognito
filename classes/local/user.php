@@ -68,7 +68,7 @@ class user {
      * @param string $field
      * @return string
      */
-    private function pollPayloadByName(String $field): string {
+    private function poll_payload_by_name(String $field): string {
         $result = '';
         $field = get_config('auth_cognito', "{$field}_field");
         if (isset($this->user->$field) && $this->user->$field) {
@@ -85,8 +85,8 @@ class user {
     public function create_user(): int {
         global $CFG;
 
-        $firstname = $this->pollPayloadByName('firstname');
-        $lastname = $this->pollPayloadByName('lastname');
+        $firstname = $this->poll_payload_by_name('firstname');
+        $lastname = $this->poll_payload_by_name('lastname');
 
         $user = new \stdClass();
         $user->auth = $this->token->auth;
