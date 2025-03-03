@@ -63,6 +63,19 @@ class user {
         $this->locale = 'en';
     }
 
+    /**
+     * Allow override of fieldnames using settings
+     * @param string $field
+     * @return string
+     */
+    private function poll_payload_by_name(String $field): string {
+        $result = '';
+        $field = get_config('auth_cognito', "{$field}_field");
+        if (isset($this->user->$field) && $this->user->$field) {
+            $result = $this->user->$field;
+        }
+        return $result;
+    }
 
     /**
      * Generates the User for Oomax
@@ -72,14 +85,9 @@ class user {
     public function create_user(): int {
         global $CFG;
 
-        $firstname = '';
-        $lastname = '';
-        if (isset($this->user->name) && $this->user->name) {
-            $firstname = $this->user->name;
-        }
-        if (isset($this->user->family_name) && $this->user->family_name) {
-            $lastname = $this->user->family_name;
-        }
+        $firstname = $this->poll_payload_by_name('firstname');
+        $lastname = $this->poll_payload_by_name('lastname');
+
         $user = new \stdClass();
         $user->auth = $this->token->auth;
         $user->username = preg_replace('/\+/', '_', $this->user->email);
