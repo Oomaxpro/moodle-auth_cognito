@@ -154,7 +154,7 @@ class user {
             // If user exist perform login and redirect.
             $this->user->firstname = $firstname;
             $this->user->lastname = $lastname;
-    
+
             $this->user->lang = $this->locale;
             if (isset($this->user->locale) && $this->user->locale != $this->user->lang) {
                 $this->user->lang = $this->user->locale;
