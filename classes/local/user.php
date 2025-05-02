@@ -71,7 +71,15 @@ class user {
     private function poll_payload_by_name(String $field): string {
         $result = '';
         $field = get_config('auth_cognito', "{$field}_field");
-        if (isset($this->user->$field) && $this->user->$field) {
+
+        if (strpos($field, ',') != 0) {
+            foreach (explode(',', $field) as $f) {
+                $f = trim($f);
+                if (isset($this->user->$f)) {
+                    $result = $this->user->$f;
+                }
+            }
+        } else if (isset($this->user->$field) && $this->user->$field) {
             $result = $this->user->$field;
         }
         return $result;
@@ -139,9 +147,14 @@ class user {
         $userexists = $DB->get_record_select('user', 'LOWER(email) = ?', [strtolower($this->user->email)]);
 
         if ($userexists) {
+            $firstname = $this->poll_payload_by_name('firstname');
+            $lastname = $this->poll_payload_by_name('lastname');
+
             $this->user = $userexists;
             // If user exist perform login and redirect.
-
+            $this->user->firstname = $firstname;
+            $this->user->lastname = $lastname;
+    
             $this->user->lang = $this->locale;
             if (isset($this->user->locale) && $this->user->locale != $this->user->lang) {
                 $this->user->lang = $this->user->locale;
