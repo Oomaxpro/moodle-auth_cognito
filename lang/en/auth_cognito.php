@@ -56,3 +56,5 @@ $string['config_firstname_field'] = 'First name field';
 $string['config_firstname_field_desc'] = "Use this field from the payload as user's First name.";
 $string['config_lastname_field'] = 'Last name field';
 $string['config_lastname_field_desc'] = "Use this field from the payload as user's Last name.";
+$string['config_updateprofile'] = 'Allow users to update their profile';
+$string['config_updateprofile_desc'] = 'Allow users to update their profile';
