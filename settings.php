@@ -36,12 +36,10 @@ $settings = new admin_settingpage($section, get_string("{$pluginname}_settings",
 if ($ADMIN->fulltree) {
     $settings->add(
         new admin_setting_configcheckbox(
-            "{$pluginname}/field_lock_email",
-            get_string('config_lock_email', $pluginname),
-            get_string('config_lock_email_desc', $pluginname),
-            'locked',
-            'locked',
-            'unlocked'
+            "{$pluginname}/updateprofile",
+            get_string('config_updateprofile', $pluginname),
+            get_string('config_updateprofile_desc', $pluginname),
+            0
         )
     );
 
@@ -62,4 +60,9 @@ if ($ADMIN->fulltree) {
             'family_name'
         )
     );
+
+    // Display locking / mapping of profile fields.
+    $authplugin = get_auth_plugin('cognito');
+    display_auth_lock_options($settings, $authplugin->authtype, $authplugin->userfields,
+            get_string('auth_fieldlocks_help', 'auth'), false, false, $authplugin->get_custom_user_profile_fields());
 }

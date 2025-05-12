@@ -99,7 +99,7 @@ class auth_plugin_cognito extends \auth_plugin_base {
      * @return bool
      */
     public function can_edit_profile(): bool {
-        return false;
+        return isset($this->config->updateprofile) && $this->config->updateprofile == 1;
     }
 
     /**
