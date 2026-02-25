@@ -4,26 +4,26 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
+class ComposerStaticInitf252683ab216f2da81e8c285177002c7
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'a' => 
+        'a' =>
         array (
             'auth_cognito\\' => 13,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Php83\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -47,7 +47,7 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
             'Symfony\\Component\\Config\\' => 25,
             'SpomkyLabs\\Pki\\' => 15,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
@@ -56,176 +56,181 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
             'Psr\\Cache\\' => 10,
+            'ParagonIE\\Sodium\\' => 17,
             'ParagonIE\\ConstantTime\\' => 23,
         ),
-        'J' => 
+        'J' =>
         array (
             'Jose\\Experimental\\' => 18,
             'Jose\\Component\\' => 15,
             'Jose\\Bundle\\JoseFramework\\' => 26,
             'Jose\\' => 5,
         ),
-        'F' => 
+        'F' =>
         array (
             'Firebase\\JWT\\' => 13,
         ),
-        'B' => 
+        'B' =>
         array (
             'Brick\\Math\\' => 11,
         ),
-        'A' => 
+        'A' =>
         array (
             'AESKW\\' => 6,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'auth_cognito\\' => 
+        'auth_cognito\\' =>
         array (
             0 => __DIR__ . '/../..' . '/classes',
         ),
-        'Symfony\\Polyfill\\Php83\\' => 
+        'Symfony\\Polyfill\\Php83\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Symfony\\Polyfill\\Ctype\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\HttpClient\\' => 
+        'Symfony\\Contracts\\HttpClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-client-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
+        'Symfony\\Contracts\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Component\\VarExporter\\' => 
+        'Symfony\\Component\\VarExporter\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-exporter',
         ),
-        'Symfony\\Component\\VarDumper\\' => 
+        'Symfony\\Component\\VarDumper\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Symfony\\Component\\String\\' => 
+        'Symfony\\Component\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\HttpKernel\\' => 
+        'Symfony\\Component\\HttpKernel\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-kernel',
         ),
-        'Symfony\\Component\\HttpFoundation\\' => 
+        'Symfony\\Component\\HttpFoundation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\HttpClient\\' => 
+        'Symfony\\Component\\HttpClient\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/http-client',
         ),
-        'Symfony\\Component\\Filesystem\\' => 
+        'Symfony\\Component\\Filesystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
+        'Symfony\\Component\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\ErrorHandler\\' => 
+        'Symfony\\Component\\ErrorHandler\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
         ),
-        'Symfony\\Component\\DependencyInjection\\' => 
+        'Symfony\\Component\\DependencyInjection\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'Symfony\\Component\\Console\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Component\\Config\\' => 
+        'Symfony\\Component\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
-        'SpomkyLabs\\Pki\\' => 
+        'SpomkyLabs\\Pki\\' =>
         array (
             0 => __DIR__ . '/..' . '/spomky-labs/pki-framework/src',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\EventDispatcher\\' => 
+        'Psr\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Clock\\' => 
+        'Psr\\Clock\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
-        'Psr\\Cache\\' => 
+        'Psr\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
-        'ParagonIE\\ConstantTime\\' => 
+        'ParagonIE\\Sodium\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced',
+        ),
+        'ParagonIE\\ConstantTime\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'Jose\\Experimental\\' => 
+        'Jose\\Experimental\\' =>
         array (
             0 => __DIR__ . '/..' . '/web-token/jwt-framework/src/Experimental',
         ),
-        'Jose\\Component\\' => 
+        'Jose\\Component\\' =>
         array (
             0 => __DIR__ . '/..' . '/web-token/jwt-framework/src/Library',
         ),
-        'Jose\\Bundle\\JoseFramework\\' => 
+        'Jose\\Bundle\\JoseFramework\\' =>
         array (
             0 => __DIR__ . '/..' . '/web-token/jwt-framework/src/Bundle',
         ),
-        'Jose\\' => 
+        'Jose\\' =>
         array (
             0 => __DIR__ . '/..' . '/web-token/jwt-framework/src',
         ),
-        'Firebase\\JWT\\' => 
+        'Firebase\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
-        'Brick\\Math\\' => 
+        'Brick\\Math\\' =>
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
-        'AESKW\\' => 
+        'AESKW\\' =>
         array (
             0 => __DIR__ . '/..' . '/spomky-labs/aes-key-wrap/src',
         ),
@@ -626,6 +631,32 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
         'ParagonIE\\ConstantTime\\Encoding' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Encoding.php',
         'ParagonIE\\ConstantTime\\Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Hex.php',
         'ParagonIE\\ConstantTime\\RFC4648' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/RFC4648.php',
+        'ParagonIE\\Sodium\\Compat' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Compat.php',
+        'ParagonIE\\Sodium\\Core\\BLAKE2b' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/BLAKE2b.php',
+        'ParagonIE\\Sodium\\Core\\ChaCha20' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/ChaCha20.php',
+        'ParagonIE\\Sodium\\Core\\ChaCha20\\Ctx' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/ChaCha20/Ctx.php',
+        'ParagonIE\\Sodium\\Core\\ChaCha20\\IetfCtx' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/ChaCha20/IetfCtx.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\Fe' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/Fe.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\Cached' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/Ge/Cached.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\P1p1' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/Ge/P1p1.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\P2' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/Ge/P2.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\P3' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/Ge/P3.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\Ge\\Precomp' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/Ge/Precomp.php',
+        'ParagonIE\\Sodium\\Core\\Curve25519\\H' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Curve25519/H.php',
+        'ParagonIE\\Sodium\\Core\\Ed25519' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Ed25519.php',
+        'ParagonIE\\Sodium\\Core\\HChaCha20' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/HChaCha20.php',
+        'ParagonIE\\Sodium\\Core\\HSalsa20' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/HSalsa20.php',
+        'ParagonIE\\Sodium\\Core\\Poly1305' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Poly1305.php',
+        'ParagonIE\\Sodium\\Core\\Poly1305\\State' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Poly1305/State.php',
+        'ParagonIE\\Sodium\\Core\\Salsa20' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Salsa20.php',
+        'ParagonIE\\Sodium\\Core\\SipHash' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/SipHash.php',
+        'ParagonIE\\Sodium\\Core\\Util' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Util.php',
+        'ParagonIE\\Sodium\\Core\\X25519' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/X25519.php',
+        'ParagonIE\\Sodium\\Core\\XChaCha20' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/XChaCha20.php',
+        'ParagonIE\\Sodium\\Core\\Xsalsa20' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Core/Xsalsa20.php',
+        'ParagonIE\\Sodium\\Crypto' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/Crypto.php',
+        'ParagonIE\\Sodium\\File' => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced/File.php',
         'Psr\\Cache\\CacheException' => __DIR__ . '/..' . '/psr/cache/src/CacheException.php',
         'Psr\\Cache\\CacheItemInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemInterface.php',
         'Psr\\Cache\\CacheItemPoolInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemPoolInterface.php',
@@ -1117,6 +1148,7 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
         'Symfony\\Component\\Console\\Helper\\TableRows' => __DIR__ . '/..' . '/symfony/console/Helper/TableRows.php',
         'Symfony\\Component\\Console\\Helper\\TableSeparator' => __DIR__ . '/..' . '/symfony/console/Helper/TableSeparator.php',
         'Symfony\\Component\\Console\\Helper\\TableStyle' => __DIR__ . '/..' . '/symfony/console/Helper/TableStyle.php',
+        'Symfony\\Component\\Console\\Helper\\TerminalInputHelper' => __DIR__ . '/..' . '/symfony/console/Helper/TerminalInputHelper.php',
         'Symfony\\Component\\Console\\Input\\ArgvInput' => __DIR__ . '/..' . '/symfony/console/Input/ArgvInput.php',
         'Symfony\\Component\\Console\\Input\\ArrayInput' => __DIR__ . '/..' . '/symfony/console/Input/ArrayInput.php',
         'Symfony\\Component\\Console\\Input\\Input' => __DIR__ . '/..' . '/symfony/console/Input/Input.php',
@@ -1695,6 +1727,7 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
         'Symfony\\Component\\HttpKernel\\Fragment\\RoutableFragmentRenderer' => __DIR__ . '/..' . '/symfony/http-kernel/Fragment/RoutableFragmentRenderer.php',
         'Symfony\\Component\\HttpKernel\\Fragment\\SsiFragmentRenderer' => __DIR__ . '/..' . '/symfony/http-kernel/Fragment/SsiFragmentRenderer.php',
         'Symfony\\Component\\HttpKernel\\HttpCache\\AbstractSurrogate' => __DIR__ . '/..' . '/symfony/http-kernel/HttpCache/AbstractSurrogate.php',
+        'Symfony\\Component\\HttpKernel\\HttpCache\\CacheWasLockedException' => __DIR__ . '/..' . '/symfony/http-kernel/HttpCache/CacheWasLockedException.php',
         'Symfony\\Component\\HttpKernel\\HttpCache\\Esi' => __DIR__ . '/..' . '/symfony/http-kernel/HttpCache/Esi.php',
         'Symfony\\Component\\HttpKernel\\HttpCache\\HttpCache' => __DIR__ . '/..' . '/symfony/http-kernel/HttpCache/HttpCache.php',
         'Symfony\\Component\\HttpKernel\\HttpCache\\ResponseCacheStrategy' => __DIR__ . '/..' . '/symfony/http-kernel/HttpCache/ResponseCacheStrategy.php',
@@ -1780,7 +1813,6 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
         'Symfony\\Component\\VarDumper\\Cloner\\Cursor' => __DIR__ . '/..' . '/symfony/var-dumper/Cloner/Cursor.php',
         'Symfony\\Component\\VarDumper\\Cloner\\Data' => __DIR__ . '/..' . '/symfony/var-dumper/Cloner/Data.php',
         'Symfony\\Component\\VarDumper\\Cloner\\DumperInterface' => __DIR__ . '/..' . '/symfony/var-dumper/Cloner/DumperInterface.php',
-        'Symfony\\Component\\VarDumper\\Cloner\\Internal\\NoDefault' => __DIR__ . '/..' . '/symfony/var-dumper/Cloner/Internal/NoDefault.php',
         'Symfony\\Component\\VarDumper\\Cloner\\Stub' => __DIR__ . '/..' . '/symfony/var-dumper/Cloner/Stub.php',
         'Symfony\\Component\\VarDumper\\Cloner\\VarCloner' => __DIR__ . '/..' . '/symfony/var-dumper/Cloner/VarCloner.php',
         'Symfony\\Component\\VarDumper\\Command\\Descriptor\\CliDescriptor' => __DIR__ . '/..' . '/symfony/var-dumper/Command/Descriptor/CliDescriptor.php',
@@ -1849,14 +1881,21 @@ class ComposerStaticInit6d8357acdf16881a84cef604ba6233f0
         'Symfony\\Polyfill\\Intl\\Normalizer\\Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Normalizer.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php83\\Php83' => __DIR__ . '/..' . '/symfony/polyfill-php83/Php83.php',
+        'auth_cognito\\local\\audiences' => __DIR__ . '/../..' . '/classes/local/audiences.php',
+        'auth_cognito\\local\\courses' => __DIR__ . '/../..' . '/classes/local/courses.php',
+        'auth_cognito\\local\\groups' => __DIR__ . '/../..' . '/classes/local/groups.php',
+        'auth_cognito\\local\\messages' => __DIR__ . '/../..' . '/classes/local/messages.php',
+        'auth_cognito\\local\\token' => __DIR__ . '/../..' . '/classes/local/token.php',
+        'auth_cognito\\local\\user' => __DIR__ . '/../..' . '/classes/local/user.php',
+        'auth_cognito\\privacy\\provider' => __DIR__ . '/../..' . '/classes/privacy/provider.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6d8357acdf16881a84cef604ba6233f0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6d8357acdf16881a84cef604ba6233f0::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit6d8357acdf16881a84cef604ba6233f0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf252683ab216f2da81e8c285177002c7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf252683ab216f2da81e8c285177002c7::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf252683ab216f2da81e8c285177002c7::$classMap;
 
         }, null, ClassLoader::class);
     }
